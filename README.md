@@ -12,9 +12,7 @@ Wordpress users enumerate  bypass to get the website users.
 
 #Help :
 <br>usage: wpueM*.py [-h] -s SITE [-n N]<br>
-<br>
 Wordpress users enumerate bypass<br>
-<br>
 optional arguments:<br>
  -h, --help            show this help message and exit<br>
  -s SITE, --site SITE  targeted website URL<br>
