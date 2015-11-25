@@ -9,4 +9,3 @@ Wordpress users enumerate  bypass to get the website users.
 <img src=http://i.imgur.com/CAMalsz.png />
  - Method #3: <br>
 <img src=http://i.imgur.com/Bsmfi4z.png />
-</h2>
