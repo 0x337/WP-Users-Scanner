@@ -9,3 +9,15 @@ Wordpress users enumerate  bypass to get the website users.
 <img src=http://i.imgur.com/CAMalsz.png />
  - Method #3: <br>
 <img src=http://i.imgur.com/Bsmfi4z.png />
+
+#Help :
+usage: wpueM*.py [-h] -s SITE [-n N]
+
+Wordpress users enumerate bypass
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -s SITE, --site SITE  targeted website URL
+  -n N                  numbers of users to bypass
+
+Coded by @3Turr
