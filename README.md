@@ -1,5 +1,5 @@
 # WordPress Users Enumerate (WPUE)
-<h4>Success Rate: <br> #1 Method 50%<br> #2 Method 70%<br> #3 Method 95%<br></h4>
+<h4>Success Rate: <br> #1 Method 70%<br> #2 Method 85%<br> #3 Method 95%<br></h4>
 Wordpress users enumerate  bypass to get the website users.
 # Example:
 <h2>
