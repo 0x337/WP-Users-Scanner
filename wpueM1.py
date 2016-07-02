@@ -45,7 +45,7 @@ for x in range(1,usern):
 	except:
 		0
 	u = []
-	u.append(s.split('<meta property="og:title" content="')[1].split(', ')[0])
+	u.append(s.split('<meta property="og:title" content="')[1].replace("www.", "").split(', ')[0])
 	u.append(s.split('<meta property="og:url" content="'+site+'author/')[1].split('/"')[0])
 
 	users.append(u)
